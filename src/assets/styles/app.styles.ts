@@ -1,5 +1,3 @@
 import styled from 'styled-components';
 
-export const SApp = styled.div`
-    text-align: center;
-`;
+export const SApp = styled.div``;
