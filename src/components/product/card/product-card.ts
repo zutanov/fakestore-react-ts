@@ -5,9 +5,9 @@ export const SProductCard = styled.div`
     padding: 10px;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr 1fr;
+    grid-template-rows: minmax(210px, auto);
     gap: 15px;
     width: 500px;
-    height: 210px;
     border: 1px solid black;
 `;
 

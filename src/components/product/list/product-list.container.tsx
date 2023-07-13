@@ -8,7 +8,7 @@ import Loader from '../../loader/loader.component';
 import { useProducts } from '../../../products.hook';
 
 const ProductListContainer = () => {
-    const { products, loading, error, fetchProducts } = useProducts();
+    const { loading, error, fetchProducts } = useProducts();
 
     useEffect(() => {
         fetchProducts();
@@ -17,7 +17,8 @@ const ProductListContainer = () => {
     return loading ? (
         <Loader />
     ) : (
-        <SProductContainer>{error || <ProductList products={products}></ProductList>}</SProductContainer>
+        // <SProductContainer>{error || <ProductList products={products}></ProductList>}</SProductContainer>
+        <SProductContainer>{error || <ProductList></ProductList>}</SProductContainer>
     );
 };
 

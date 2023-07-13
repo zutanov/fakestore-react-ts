@@ -7,10 +7,12 @@ type Products = {
     products: ProductModel[];
 };
 
-export const ProductList: React.FC<Products> = memo(products => {
+// export const ProductList: React.FC<Products> = memo(products => {
+export const ProductList = () => {
     return (
         <SProductList>
-            <ProductCardComponent products={products.products} />
+            {/* <ProductCardComponent products={products.products} /> */}
+            <ProductCardComponent />
         </SProductList>
     );
-});
+};
