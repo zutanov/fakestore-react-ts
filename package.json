@@ -2,6 +2,7 @@
     "name": "fakestore-redux",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://zutanov.github.io/fakestore-react-ts",
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.5",
         "react": "^18.2.0",
@@ -12,6 +13,8 @@
         "typescript": "^4.9.5"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -44,6 +47,7 @@
         "@types/uuid": "^9.0.2",
         "axios": "^1.4.0",
         "eslint-plugin-jsx-a11y": "^6.7.1",
+        "gh-pages": "^5.0.0",
         "prettier": "^2.8.8"
     }
 }
