@@ -1,12 +1,11 @@
 export interface ProductModel {
-    map(arg0: (el: ProductModel) => import('react/jsx-runtime').JSX.Element): unknown;
-    id: number;
+    id: number | string;
     title: string;
     price: number;
     description: string;
-    category: string;
+    category?: string;
     image: string;
-    rating: {
+    rating?: {
         rate: number;
         count: number;
     };

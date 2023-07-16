@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { SDescription, SDescriptionBtn, SDescriptionText } from './description';
 
 interface DescriptionProps {
