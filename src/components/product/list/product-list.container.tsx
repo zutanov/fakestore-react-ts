@@ -1,11 +1,10 @@
-import React, { memo, useEffect, useState } from 'react';
-import { ProductModel } from '../../../models/product.model';
+import { memo, useEffect } from 'react';
 import { SProductContainer } from './product-list';
-import { fetchProductsApi } from '../../../services/product-api.service';
-import { PRODUCTS_URL } from '../../../constants/api.constants';
+
 import { ProductList } from './product-list.component';
 import Loader from '../../loader/loader.component';
-import { useProducts } from '../../../products.hook';
+import { useProducts } from '../../../hooks/products.hook';
+import ProductCreationContainer from '../creation/product-creation.container';
 
 const ProductListContainer = () => {
     const { loading, error, fetchProducts } = useProducts();
@@ -17,8 +16,10 @@ const ProductListContainer = () => {
     return loading ? (
         <Loader />
     ) : (
-        // <SProductContainer>{error || <ProductList products={products}></ProductList>}</SProductContainer>
-        <SProductContainer>{error || <ProductList></ProductList>}</SProductContainer>
+        <>
+            <SProductContainer>{error || <ProductList />}</SProductContainer>
+            <ProductCreationContainer />
+        </>
     );
 };
 

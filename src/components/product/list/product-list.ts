@@ -6,7 +6,7 @@ export const SProductContainer = styled.div`
 `;
 
 export const SProductList = styled.div`
-    padding: 20px 0;
+    padding: 40px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
