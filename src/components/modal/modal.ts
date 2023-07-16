@@ -15,8 +15,11 @@ export const SModal = styled.div`
 export const SModalWindow = styled.div`
     position: relative;
     padding: 10px;
-    background-color: white;
+    background-color: #f6f6f6;
     width: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 6px darkblue;
 `;
 
 export const SModalTitle = styled.h2`

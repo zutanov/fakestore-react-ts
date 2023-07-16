@@ -28,4 +28,12 @@ export const SFormButton = styled.button`
     background-color: darkblue;
     color: white;
     font-size: 18px;
+    transition: 0.6s;
+    :hover {
+        background-color: #fff;
+        color: darkblue;
+        border: 1px solid darkblue;
+        font-size: 20px;
+        font-weight: bold;
+    }
 `;
